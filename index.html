@@ -1,1 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Product list with cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <div class="container">
+        <!-- Main Product Catalog -->
+        <main class="desserts">
+            <h1 class="desserts__title">Desserts</h1>
+            <!-- JavaScript will dynamically inject the product list items here -->
+            <ul class="desserts__grid"></ul>
+        </main>
+
+        <!-- Shopping Cart Sidebar -->
+        <aside class="cart">
+            <h2 class="cart__title" aria-live="polite">Your Cart (0)</h2>
+            
+            <!-- Empty State View -->
+            <div class="cart__empty">
+                <img class="cart__empty-img" src="assets/images/illustration-empty-cart.svg" alt="Empty cart illustration">
+                <p class="cart__empty-text">Your added items will appear here</p>
+            </div>
+
+            <!-- Filled State View (Toggled via JavaScript) -->
+            <div class="cart__content" hidden>
+                <ul class="cart__list"></ul>
+                <div class="cart__total-container">
+                    <p class="cart__total-text">Order Total</p>
+                    <p class="cart__total-price">$0.00</p>
+                </div>
+                <div class="cart__carbon-neutral">
+                    <img src="assets/images/icon-carbon-neutral.svg" alt="Carbon neutral icon">
+                    <p>This is a <strong>carbon-neutral</strong> delivery</p>
+                </div>
+                <button class="cart__checkout-btn">Confirm Order</button>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Order Confirmation Modal -->
+    <dialog class="modal">
+        <img src="assets/images/icon-order-confirmed.svg" alt="" class="modal__icon">
+        <h2 class="modal__title">Order Confirmed</h2>
+        <p class="modal__subtitle">We hope you enjoy your food!</p>
+        
+        <div class="modal__summary">
+            <ul class="modal__list">
+                <!-- Dynamic confirmation items go here -->
+            </ul>
+            <div class="modal__total-container">
+                <span class="modal__total-text">Order Total</span>
+                <span class="modal__total-price">$0.00</span>
+            </div>
+        </div>
+    
+    <button class="modal__start-btn">Start New Order</button>
+</dialog>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
