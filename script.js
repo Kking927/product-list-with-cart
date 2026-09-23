@@ -77,7 +77,7 @@ function displayDesserts(desserts) {
         </div>
         <div class="dessert-card__content">
             <span class="dessert-card__category">${dessert.category}</span>
-            <h3 class="dessert-card__name">${dessert.name}</h3>
+            <h2 class="dessert-card__name">${dessert.name}</h2>
             <p class="dessert-card__price">$${dessert.price.toFixed(2)}</p>
         </div>
     `;
