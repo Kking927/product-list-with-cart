@@ -180,7 +180,7 @@ button:focus-visible,
     background-color: var(--red);
     color: var(--white);
     border-radius: 2rem;
-    padding: 0.75rem 1.25rem;
+    padding: clamp(0.75rem, 0.5rem + 1vw, 1.25rem) clamp(1.25rem, 1rem + 1.25vw, 2.25rem);
     font-family: var(--font-family);
     font-size: var(--fs-btn);
     font-weight: 650;
