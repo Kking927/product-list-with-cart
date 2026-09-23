@@ -16,6 +16,9 @@
     --rose-900: hsl(14, 65%, 9%); /* Dark headings / main text */
     --white: hsl(0, 0%, 100%); /* White / light backgrounds */
 
+    /* --- UI Overlays --- */
+    --modal-backdrop: hsla(0, 0%, 0%, 0.5); /* Dialog/modal overlay */
+
   /* Typography */
     /* Font Family */
     --font-family: "Red Hat Text", sans-serif;
@@ -412,7 +415,7 @@ button:focus-visible,
 }
 
 .modal::backdrop {
-    background-color: hsla(0, 0%, 0%, 0.5);
+    background-color: var(--modal-backdrop);
 }
 
 .modal__icon {
