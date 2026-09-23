@@ -57,20 +57,20 @@ function displayDesserts(desserts) {
             
             ${isSelected ? `
                 <div class="dessert-card__quantity-control">
-                    <button class="dessert-card__qty-btn decrement" aria-label="Decrease quantity">
+                    <button type="button" class="dessert-card__qty-btn decrement" aria-label="Decrease quantity">
                         <svg class="dessert-card__qty-icon" xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2">
                             <path fill="currentColor" d="M0 .375h10v1.25H0V.375Z"/>
                         </svg>
                     </button>
                     <span class="dessert-card__qty-value">${quantity}</span>
-                    <button class="dessert-card__qty-btn increment" aria-label="Increase quantity">
+                    <button type="button" class="dessert-card__qty-btn increment" aria-label="Increase quantity">
                         <svg class="dessert-card__qty-icon" xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10">
                             <path fill="currentColor" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/>
                         </svg>
                     </button>
                 </div>
             ` : `
-                <button class="dessert-card__action-btn">
+                <button type="button" class="dessert-card__action-btn">
                     <img src="assets/images/icon-add-to-cart.svg" alt=""> Add to Cart
                 </button>
             `}
@@ -204,7 +204,7 @@ function updateCartUI() {
                 <span class="cart__item-total">$${itemTotal.toFixed(2)}</span>
             </div>
         </div>
-        <button class="cart__item-remove" aria-label="Remove item">
+        <button type="button" class="cart__item-remove" aria-label="Remove item">
             <img src="assets/images/icon-remove-item.svg" alt="Remove item">
         </button>
     `;
