@@ -72,8 +72,6 @@ body {
     padding: clamp(1rem, 0.6rem + 1.5vw, 2.5rem) clamp(1rem, 0.5rem + 1.2vw, 2rem);
 }
 
-/* --- Typography Sizes, Weights & Colors --- */
-
 /* Main Styling */
 .container {
     width: 100%;
