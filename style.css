@@ -72,14 +72,6 @@ body {
     padding: clamp(1rem, 0.6rem + 1.5vw, 2.5rem) clamp(1rem, 0.5rem + 1.2vw, 2rem);
 }
 
-/* --- Global Focus Accessibility Styles --- */
-button:focus-visible,
-.cart__item-remove:focus-visible,
-.modal__start-btn:focus-visible {
-    outline: 2px solid var(--red);
-    outline-offset: 2px;
-}
-
 /* --- Typography Sizes, Weights & Colors --- */
 
 /* Main Styling */
@@ -336,6 +328,14 @@ button:focus-visible,
 
 .cart__item-remove:hover img {
     filter: brightness(0); 
+}
+
+/* --- Focus Accessibility Styles --- */
+button:focus-visible,
+.cart__item-remove:focus-visible,
+.modal__start-btn:focus-visible {
+    outline: 2px solid var(--red);
+    outline-offset: 2px;
 }
 
 .cart__total-container {
