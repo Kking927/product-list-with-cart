@@ -328,14 +328,6 @@ body {
     filter: brightness(0); 
 }
 
-/* --- Focus Accessibility Styles --- */
-button:focus-visible,
-.cart__item-remove:focus-visible,
-.modal__start-btn:focus-visible {
-    outline: 2px solid var(--red);
-    outline-offset: 2px;
-}
-
 .cart__total-container {
     display: flex;
     justify-content: space-between;
@@ -542,6 +534,14 @@ button:focus-visible,
 
 .modal__start-btn:hover {
     background-color: var(--red-dark);
+}
+
+/* --- Focus Accessibility Styles --- */
+button:focus-visible,
+.cart__item-remove:focus-visible,
+.modal__start-btn:focus-visible {
+    outline: 2px solid var(--red);
+    outline-offset: 2px;
 }
 
 /* Tablet Layout (2 Columns) */
