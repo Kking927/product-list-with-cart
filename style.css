@@ -368,6 +368,7 @@ button:focus-visible,
     color: var(--rose-900);
 }
 
+/* stylelint-disable-next-line no-descending-specificity */
 .cart__carbon-neutral img {
     width: 1.35rem;
     height: 1.25rem;
