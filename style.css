@@ -75,7 +75,7 @@ body {
 /* Main Styling */
 .container {
     width: 100%;
-    max-width: 76rem;
+    max-width: 74rem;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
