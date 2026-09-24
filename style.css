@@ -580,7 +580,7 @@ button:focus-visible,
 
     .cart__title {
         margin-block-start: clamp(-0.75rem, 0.25rem - 1.2vw, -0.25rem);
-        margin-inline-start: -0.5rem;
+        margin-inline-start: clamp(-0.5rem, -0.1rem - 0.5vw, 0rem);
         align-self: start;
     }
 
